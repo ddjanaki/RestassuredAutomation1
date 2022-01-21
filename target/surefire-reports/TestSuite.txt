@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 36.468 sec <<< FAILURE!
+checkResposeBody(com.employeeapi.testCases.TC003_Post_Employee_Record)  Time elapsed: 0.044 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.employeeapi.testCases.TC003_Post_Employee_Record.checkResposeBody(TC003_Post_Employee_Record.java:60)
+
+checkStatusCode(com.employeeapi.testCases.TC003_Post_Employee_Record)  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [429]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.employeeapi.testCases.TC003_Post_Employee_Record.checkStatusCode(TC003_Post_Employee_Record.java:69)
+
+checkContentType(com.employeeapi.testCases.TC005_Delete_Employee_Record)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: expected [application/json] but found [text/html; charset=UTF-8]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkContentType(TC005_Delete_Employee_Record.java:82)
+
+checkResposeBody(com.employeeapi.testCases.TC005_Delete_Employee_Record)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkResposeBody(TC005_Delete_Employee_Record.java:59)
+
+checkStatusCode(com.employeeapi.testCases.TC005_Delete_Employee_Record)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected [200] but found [429]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:652)
+	at org.testng.Assert.assertEquals(Assert.java:662)
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkStatusCode(TC005_Delete_Employee_Record.java:67)
+
+checkstatusLine(com.employeeapi.testCases.TC005_Delete_Employee_Record)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: expected [HTTP/1.1 200 OK] but found [HTTP/1.1 429 Too Many Requests]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.employeeapi.testCases.TC005_Delete_Employee_Record.checkstatusLine(TC005_Delete_Employee_Record.java:74)
+
